@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.0;net4.5</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <Id>Concentus.OggFile</Id>
     <Version>1.0.4.0</Version>
     <Title>Concentus.OggFile</Title>
@@ -19,8 +19,7 @@
     <PackageIconUrl>http://durandal.dnsalias.net/imgur/concentus.png</PackageIconUrl>
     <PackageReleaseNotes>1.0.4 Adding basic support for seeking within a stream</PackageReleaseNotes>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Concentus" Version="1.1.7" />
+    <ProjectReference Include="..\..\concentus\CSharp\Concentus\Concentus.csproj" />
   </ItemGroup>
 </Project>
